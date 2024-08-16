@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shams Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="hero">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Shams, a passionate Electronics and Computer Science student with a flair for web development.</p>
+            <button class="cta-button" onclick="showPopUp()">Learn More</button>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="https://media.istockphoto.com/id/1088909778/photo/portrait-of-handsome-smiling-young-man-studio-shot.webp?b=1&s=170667a&w=0&k=20&c=ztcrelqZ8UJYEycI9nS_tnMaSQr4ZBr6b-dMnfa-bIE=" alt="Profile Picture" class="profile-pic">
+        <p>
+            I'm Shams, currently in my third year of pursuing a Bachelor's degree in Electronics and Computer Science. 
+            With a deep interest in technology and innovation, I have been involved in various projects that push the boundaries of what's possible.
+            My passion lies in creating dynamic, responsive web applications that not only look good but also deliver an exceptional user experience. 
+            When I'm not coding, you can find me exploring new tech trends, working on personal projects, or reading up on the latest advancements in AI and machine learning.
+            I believe in the power of continuous learning and am always eager to take on new challenges that allow me to grow both personally and professionally.
+        </p>
+        <p>
+            Over the past few years, I've honed my skills in HTML, CSS, JavaScript, and Bootstrap. My experience includes building complex web applications from scratch, collaborating with teams, and ensuring that the final product meets the highest standards of quality and performance.
+            I'm always excited to learn new technologies and methodologies that can further enhance my skills and help me create even better digital solutions.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Interactive Web Application</h3>
+                <img src="https://images.unsplash.com/photo-1593642633279-1796119d5482" alt="Web Application Project">
+                <p>
+                    This project involved designing and developing an interactive web application that allows users to perform real-time data analysis. 
+                    The application was built using React.js and integrates with various third-party APIs to fetch live data. 
+                    One of the key challenges was optimizing the application for performance while maintaining a responsive design across different devices.
+                    The end result was a sleek, user-friendly interface that provided valuable insights to users.
+                </p>
+                <button class="project-button" onclick="showProjectPopUp('Interactive Web Application')">View Details</button>
+            </div>
+            <div class="project">
+                <h3>E-commerce Platform</h3>
+                <img src="https://5.imimg.com/data5/SELLER/Default/2020/10/MI/GA/NS/25970695/e-commerce-platform-service.jpg" alt="E-commerce Project">
+                <p>
+                    I worked on developing a full-fledged e-commerce platform that caters to a wide range of products and customers. 
+                    The platform was built using a combination of HTML, CSS, JavaScript, and Bootstrap for the front-end, and Node.js with Express for the back-end.
+                    It features a robust user authentication system, a dynamic product catalog, and an integrated payment gateway.
+                    One of the highlights of this project was creating an intuitive user experience that simplified the shopping process while ensuring security and scalability.
+                </p>
+                <button class="project-button" onclick="showProjectPopUp('E-commerce Platform')">View Details</button>
+            </div>
+            <div class="project">
+                <h3>Personal Blog</h3>
+                <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" alt="Blog Project">
+                <p>
+                    For this project, I designed and developed a personal blog that allows users to share their thoughts and experiences on a wide range of topics.
+                    The blog was built with a focus on readability and accessibility, ensuring that content is easy to consume across all devices.
+                    I incorporated features like a custom CMS, comment sections, and social media sharing options to enhance user engagement.
+                    The blog also uses SEO best practices to improve visibility and reach a broader audience.
+                </p>
+                <button class="project-button" onclick="showProjectPopUp('Personal Blog')">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me for collaborations, inquiries, or just a friendly chat.</p>
+        <div class="contact-info">
+            <p>Email: shamsxshaikh@gmail.com</p>
+            <p>Phone: +91-9511913148</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/shams">linkedin.com/in/shams</a></p>
+        </div>
+    </section>
+
+    <!-- Pop-Up Container -->
+    <div id="popup-container" class="popup">
+        <div id="popup-content" class="popup-content">
+            <span class="close-button" onclick="closePopUp()">&times;</span>
+            <h3 id="popup-title"></h3>
+            <p id="popup-description"></p>
+        </div>
+    </div>
+</body>
+</html>
